@@ -56,7 +56,6 @@ void substitute(string plaintext, string key)
 {
     int length = strlen(plaintext); // length of text for loop later
     char lookup[2][26]; // Alphabet on 0, Key on 1
-    // char ptarray[length];
     char answer[length]; // define the variable to be written to for encryption
 
     for (int i = 0; i < 26; i++)
@@ -68,11 +67,6 @@ void substitute(string plaintext, string key)
     {
         lookup[1][i] = key[i]; // Assigning Key to lookup row 1
     }
-
-    // for (int i = 0; i < length; i++)  feel like I don't need this but keeping in case I do
-    // {
-    //     ptarray[i] = plaintext[];
-    // }
 
     for (int i = 0; i < length; i++) // Cycle through each letter in the given text
     {
